@@ -83,12 +83,6 @@ author:
     - label: "Tumblr"
       icon: "fab fa-fw fa-tumblr"
       url: "https://rifusaki.tumblr.com"
-    - label: "Deviantart"
-      icon: "fab fa-fw fa-deviantart"
-      url: "https://deviantart.com/rifusaki"
-    - label: "Ko-fi"
-      icon: "fas fa-fw fa-coffee"
-      url: "https://ko-fi.com/rifusaki"
 
 footer:
   links:
@@ -113,12 +107,6 @@ footer:
     - label: "Tumblr"
       icon: "fab fa-fw fa-tumblr"
       url: "https://rifusaki.tumblr.com"
-    - label: "Deviantart"
-      icon: "fab fa-fw fa-deviantart"
-      url: "https://deviantart.com/rifusaki"
-    - label: "Ko-fi"
-      icon: "fas fa-fw fa-coffee"
-      url: "https://ko-fi.com/rifusaki"
 
 defaults:
   # _posts
