@@ -1,7 +1,7 @@
 # AGENTS.md — Coding Agent Guidelines
 
 This is a personal portfolio/blog site built with **Jekyll 3.9.5** and the
-**Minimal Mistakes** remote theme, hosted on GitHub Pages. There is no
+**Minimal Mistakes** remote theme, hosted on Cloudflare Pages. There is no
 JavaScript framework, no TypeScript, and no Node.js toolchain. All content is
 Markdown with YAML front matter and Liquid templating.
 
@@ -45,13 +45,19 @@ Restart `bundle exec jekyll serve` after editing it.
 
 The site is deployed automatically on every push to `main` via Cloudflare Pages.
 
-- **Build command:** `bundle exec jekyll build`
+- **Build command:** `RUBYOPT="-E utf-8" bundle exec jekyll build`
 - **Output directory:** `_site`
 - **Ruby version:** pinned to `3.3.4` via `.ruby-version`
 - **Required env var:** `JEKYLL_ENV=production` (set in CF dashboard)
 - **Optional env var:** `JEKYLL_GITHUB_TOKEN` — a GitHub PAT with `public_repo`
   read scope; prevents the `jekyll-github-metadata` plugin from hitting the
   GitHub API unauthenticated rate limit (60 req/hr) during builds
+
+The `RUBYOPT="-E utf-8"` prefix is required because CF's build image does not
+have the `en_US.UTF-8` locale installed. Without it, Ruby's sass gem 3.7.4
+defaults to ASCII-8BIT encoding and fails on the UTF-8 characters in the
+Minimal Mistakes vendored Susy SCSS files. Setting `LANG` via a dashboard env
+var is not sufficient — the locale must be forced at the Ruby process level.
 
 `Gemfile.lock` is committed to the repository (intentionally — it was previously
 gitignored) to ensure deterministic builds on Cloudflare Pages. It includes both
@@ -86,7 +92,7 @@ This is intentional — it is a personal static content site.
 ## Repository Structure
 
 ```
-rifusaki.github.io/
+rifusaki.com/
 ├── _config.yml          # Main Jekyll configuration — touch carefully
 ├── _data/
 │   └── navigation.yml   # Top nav menu (5 items)
