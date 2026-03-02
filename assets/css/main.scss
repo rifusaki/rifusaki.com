@@ -5,7 +5,7 @@ search: false
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes/skins/sober_pink"; // skin
 @import "minimal-mistakes"; // main partials
 
 html {
@@ -39,10 +39,10 @@ html {
 }
 
 .photo-gallery-card {
-  border: 1px solid #d8dfd8;
-  border-radius: 10px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
   overflow: hidden;
-  background: #fbfdf9;
+  background: $background-color;
 }
 
 .photo-gallery-card__link {
@@ -53,7 +53,7 @@ html {
 
 .photo-gallery-card__cover {
   aspect-ratio: 4 / 3;
-  background: #ecf1ea;
+  background: mix(#fff, $text-color, 95%);
 }
 
 .photo-gallery-card__cover img {
@@ -68,7 +68,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #5d645d;
+  color: $muted-text-color;
+}
+
+.photo-gallery-card h3 {
+  font-size: 1rem;
 }
 
 .photo-gallery-card h3,
@@ -78,7 +82,7 @@ html {
 }
 
 .photo-gallery-card p {
-  color: #4f5850;
+  color: $muted-text-color;
   padding-top: 0;
   padding-bottom: 0.9rem;
 }
@@ -101,7 +105,7 @@ html {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: $border-radius;
   display: block;
 }
 
@@ -129,9 +133,9 @@ html {
 .photo-lightbox__prev,
 .photo-lightbox__next {
   position: absolute;
-  border: 1px solid #cad3ca;
-  background: rgba(242, 247, 244, 0.9);
-  color: #223026;
+  border: 1px solid $border-color;
+  background: rgba(255, 255, 255, 0.9);
+  color: $text-color;
   border-radius: 999px;
   width: 2.2rem;
   height: 2.2rem;
@@ -152,4 +156,30 @@ html {
 
 .photo-lightbox__next {
   right: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .photo-gallery-card {
+    background: #272123;
+    border-color: #32292c;
+  }
+  .photo-gallery-card__cover {
+    background: #1d181a;
+  }
+  .photo-gallery-card__placeholder {
+    color: #94898c;
+  }
+  .photo-gallery-card p {
+    color: #aba0a3;
+  }
+  .photo-lightbox {
+    background: rgba(29, 24, 26, 0.96);
+  }
+  .photo-lightbox__close,
+  .photo-lightbox__prev,
+  .photo-lightbox__next {
+    background: #272123;
+    border-color: #32292c;
+    color: #baaeb1;
+  }
 }
