@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Sunrise skin modified (sober pink and dark mode)
+   ========================================================================== */
+
+/* Light Mode Colors (Sober Pink theme) */
+$background-color: #fdfafb !default;
+$text-color: #4a4042 !default;
+$muted-text-color: #6b5f62 !default;
+$primary-color: #c48e9a !default;
+$border-color: mix(#fff, #4a4042, 85%) !default;
+$footer-background-color: #dcb8c0 !default;
+$link-color: #a36775 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+/* Base16 Syntax Highlighting for sober pink */
+$base00: #faf8f9 !default;
+$base01: #f1eaeb !default;
+$base02: #e3d8db !default;
+$base03: #c2b5b8 !default;
+$base04: #8b7d81 !default;
+$base05: #5c4f52 !default;
+$base06: #3e3235 !default;
+$base07: #261c1e !default;
+$base08: #b3566b !default;
+$base09: #bd6c4f !default;
+$base0a: #bd9b4f !default;
+$base0b: #7d9662 !default;
+$base0c: #5a9b9b !default;
+$base0d: #6482ad !default;
+$base0e: #9872a6 !default;
+$base0f: #a6728e !default;
+
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  
+  img, video, iframe, canvas, svg, .photo-gallery-card__cover {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}

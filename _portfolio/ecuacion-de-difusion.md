@@ -1,6 +1,6 @@
 ---
-title: "Implementación de la discretizacion de la ecuación de difusión por medio de diferencias finitas"
-excerpt: "Laplace equation simulation with time dependant boundary conditions."
+title: "Discretizacion de ecuación de difusión"
+excerpt: "Laplace equation simulation via finite differences with time dependant boundary conditions."
 author_profile: true
 # header:
 #   image: /assets/images/foo-bar-identity.jpg
@@ -12,7 +12,7 @@ sidebar:
     text: "[alhazacod/heat_eq_t_dependant_boundary](https://github.com/alhazacod/heat_eq_t_dependant_boundary)"
 #   - title: "Responsibilities"
 #     text: "Reuters try PR stupid commenters should isn't a business model"
-order: 2
+order: 5
 ---
 
 > [Leer texto completo](https://github.com/rifusaki/rifusaki.github.io/blob/main/assets/files/Ecuacion%20de%20difusion.pdf)

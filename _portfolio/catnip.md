@@ -1,5 +1,5 @@
 ---
-title: "Catnip"
+title: "catnip"
 excerpt: "Extracting all Izutsumi panels since 2025. A work in progress."
 author_profile: true
 # header:
@@ -15,13 +15,17 @@ sidebar:
 order: 1
 ---
 
-# Catnip
-
 > A work in progress
 
 Catnip is a small Jupyter notebook for those obsessive lovers of a specific manga character with spare time and computing power.
 
 Input some manga pages, add some seeds, and rejoice at the sight of 40 previews of matches. I haven't implemented an actual method to export the files. Yet.
+
+## Experimental Branches
+While the main branch acts as a baseline, there is active experimentation in several alternative branches exploring different bounding box (BBO) approaches, models, and environments:
+- [`legacy-keras`](https://github.com/rifusaki/catnip/tree/legacy-keras): Older experimental Keras implementations.
+- [`yolo-bbo`](https://github.com/rifusaki/catnip/tree/yolo-bbo): Utilizing YOLO-based models specifically tuned for Anime/Manga bounding boxes.
+- [`yolo-windows`](https://github.com/rifusaki/catnip/tree/yolo-windows): Windows-specific testing and pathing for YOLO pipelines.
 
 ## Usage
 This is how I'm testing this. So far.

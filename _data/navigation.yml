@@ -1,11 +1,11 @@
 main:
-  - title: "Photography"
+  - title: "photos"
     url: "/photo/"
-  - title: "Art"
+  - title: "art"
     url: "/art/"
-  - title: "Coding"
+  - title: "coding"
     url: "/projects/"
-  - title: "Posts"
+  - title: "posts"
     url: /posts/
-  - title: "CV"
+  - title: "cv"
     url: "/CV/"

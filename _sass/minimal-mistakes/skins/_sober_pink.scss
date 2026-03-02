@@ -1,0 +1,162 @@
+/* ==========================================================================
+   Sober Pink skin (with dark mode via prefers-color-scheme)
+   ========================================================================== */
+
+/* Light Mode Colors (Sober Pink theme) */
+$background-color: #fdfafb !default;
+$text-color: #4a4042 !default;
+$muted-text-color: #6b5f62 !default;
+$primary-color: #c48e9a !default;
+$border-color: mix(#fff, #4a4042, 85%) !default;
+$footer-background-color: #dcb8c0 !default;
+$link-color: #a36775 !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+.page__footer {
+  color: #fff !important; // override
+}
+
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+/* Base16 Syntax Highlighting for sober pink */
+$base00: #faf8f9 !default;
+$base01: #f1eaeb !default;
+$base02: #e3d8db !default;
+$base03: #c2b5b8 !default;
+$base04: #8b7d81 !default;
+$base05: #5c4f52 !default;
+$base06: #3e3235 !default;
+$base07: #261c1e !default;
+$base08: #b3566b !default;
+$base09: #bd6c4f !default;
+$base0a: #bd9b4f !default;
+$base0b: #7d9662 !default;
+$base0c: #5a9b9b !default;
+$base0d: #6482ad !default;
+$base0e: #9872a6 !default;
+$base0f: #a6728e !default;
+
+@media (prefers-color-scheme: dark) {
+  /* Softened dark pink background and dimmed text (Catppuccin style contrast) */
+  html, body {
+    background-color: #272123;
+    color: #baaeb1;
+  }
+  
+  /* Ensure all main content text elements inherit the light color */
+  p, li, blockquote, .page__content {
+    color: #baaeb1;
+  }
+
+  // Typography
+  h1, h2, h3, h4, h5, h6,
+  .page__title, .page__title a, .archive__item-title, .archive__item-title a, .author__name {
+    color: #d4c9cc !important;
+  }
+  .archive__item-excerpt, .author__bio {
+    color: #aba0a3 !important;
+  }
+
+  // Links
+  a {
+    color: #c09da5;
+    &:hover { color: #d4c9cc; }
+  }
+
+  // Header / Masthead and Nav
+  .masthead, .masthead__inner-wrap {
+    background-color: #272123 !important;
+    border-bottom: 1px solid #1d181a !important; // Subtle dark divider
+  }
+  
+  .greedy-nav {
+    background-color: #272123 !important;
+    .site-title, .masthead__menu-item a, nav a {
+      color: #baaeb1 !important;
+    }
+    .masthead__menu-item a:hover, nav a:hover {
+      color: #d4c9cc !important;
+    }
+    button.greedy-nav__toggle {
+      color: #baaeb1 !important;
+    }
+    .hidden-links {
+      background-color: #272123 !important;
+      border-color: #32292c !important;
+    }
+  }
+
+  // Footer (Darker contrast background, softer text)
+  .page__footer {
+    background-color: #1d181a !important;
+    color: #94898c !important;
+    .page__footer-title { color: #baaeb1; }
+    a { color: #aba0a3 !important; }
+    a:hover { color: #d4c9cc !important; }
+  }
+
+  // Sidebar / Author Profile Buttons & Links
+  .author__urls-wrapper {
+    ul li a, ul li a i, ul li span, ul li {
+      color: #baaeb1 !important;
+    }
+    ul li a:hover, ul li a:hover i {
+      color: #d4c9cc !important;
+    }
+    .btn {
+      background-color: #32292c;
+      color: #baaeb1;
+      border-color: #42363a;
+      &:hover {
+        background-color: #42363a;
+        color: #d4c9cc;
+      }
+    }
+  }
+
+  // Primary Buttons
+  .btn--primary, .btn--inverse {
+    background-color: #824a57;
+    color: #e8dfe1;
+    &:hover { background-color: #9e5d6d; }
+  }
+
+  // Borders and Layout
+  hr { border-bottom-color: #32292c; border-top-color: #32292c !important; }
+  .page__meta { color: #94898c; }
+  .page__related, .page__comments-title, .page__share, .page__content + .pagination {
+    border-top-color: #32292c !important;
+  }
+
+  // Code blocks (Inline and Blocks)
+  code {
+    background-color: #1d181a !important;
+    color: #baaeb1 !important;
+  }
+  .highlight, div.highlighter-rouge, figure.highlight, .page__content :not(pre) > code {
+    background-color: #1d181a !important;
+    color: #baaeb1 !important;
+  }
+  
+  // Notice and Alert blocks
+  .notice, .markdown-alert { background-color: #32292c !important; color: #baaeb1 !important; }
+  .notice--primary, .markdown-alert-important { background-color: #42363a !important; color: #baaeb1 !important; }
+  .notice--info, .markdown-alert-note { background-color: #27343b !important; color: #baaeb1 !important; }
+  .notice--warning, .markdown-alert-warning { background-color: #453420 !important; color: #baaeb1 !important; }
+  .notice--success, .markdown-alert-tip { background-color: #263b26 !important; color: #baaeb1 !important; }
+  .notice--danger, .markdown-alert-caution { background-color: #472626 !important; color: #baaeb1 !important; }
+  .notice code, .notice--primary code, .notice--info code, .notice--warning code, .notice--success code, .notice--danger code,
+  .markdown-alert code, .markdown-alert-important code, .markdown-alert-note code, .markdown-alert-warning code, .markdown-alert-tip code, .markdown-alert-caution code {
+    background-color: #1d181a !important;
+  }
+
+  // Partially darken images instead of inverting
+  img, video, iframe, canvas, svg, .photo-gallery-card__cover img, .photo-grid__item img {
+    filter: brightness(0.85) contrast(1.05);
+  }
+}
