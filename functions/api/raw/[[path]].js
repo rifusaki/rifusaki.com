@@ -9,8 +9,12 @@ export async function onRequestGet(context) {
       return new Response("Missing object path", { status: 400 });
     }
 
-    const objectPath = objectPathParam
-      .split("/")
+    // Production Pages returns [[path]] params as an array; local wrangler as a string.
+    const segments = Array.isArray(objectPathParam)
+      ? objectPathParam
+      : objectPathParam.split("/");
+
+    const objectPath = segments
       .filter(Boolean)
       .map((segment) => decodeURIComponent(segment))
       .join("/");
