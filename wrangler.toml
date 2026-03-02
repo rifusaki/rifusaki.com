@@ -2,10 +2,9 @@ name = "tukuriva-local"
 compatibility_date = "2026-03-01"
 pages_build_output_dir = "_site"
 
-[observability]
-enabled = false
-
+# NOTE: [observability] is not supported by Cloudflare Pages (Workers only).
+# NOTE: r2_buckets[].remote is not a valid Pages field. Use --remote in the
+#       wrangler pages dev CLI invocation (scripts/dev-pages.sh) for local dev.
 [[r2_buckets]]
 binding = "PHOTOS_BUCKET"
 bucket_name = "tukuriva"
-remote = true

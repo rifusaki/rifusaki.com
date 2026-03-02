@@ -30,6 +30,9 @@ sleep 5
 
 # Start wrangler using the static directory output of Jekyll
 # Wrangler will serve the static files from _site and also execute functions from functions/
+# --remote connects to the real Cloudflare R2 bucket (replaces the removed wrangler.toml
+# r2_buckets[].remote field, which is unsupported by the Pages build pipeline).
 echo "Starting Wrangler dev server..."
 exec npx wrangler pages dev _site \
-  --port="${CF_PAGES_PORT}"
+  --port="${CF_PAGES_PORT}" \
+  --remote
