@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "dev": "bash scripts/dev-pages.sh",
+    "jekyll:build": "bundle _2.5.7_ exec jekyll build",
+    "jekyll:watch": "bundle _2.5.7_ exec jekyll build --watch",
+    "photos:seed:local": "bash scripts/seed-local-r2.sh"
+  },
   "devDependencies": {
     "wrangler": "^4.69.0"
   }

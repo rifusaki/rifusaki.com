@@ -1,0 +1,3 @@
+# local-only Wrangler dev variables
+# leave empty to fetch from a local localhost:8788/api/raw/... endpoint
+PHOTO_PUBLIC_BASE_URL=https://tukuriva.rifusaki.com

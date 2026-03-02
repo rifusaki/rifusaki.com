@@ -1,0 +1,11 @@
+name = "tukuriva-local"
+compatibility_date = "2026-03-01"
+pages_build_output_dir = "_site"
+
+[observability]
+enabled = false
+
+[[r2_buckets]]
+binding = "PHOTOS_BUCKET"
+bucket_name = "tukuriva"
+remote = true

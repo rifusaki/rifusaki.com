@@ -5,10 +5,8 @@ classes: wide
 permalink: /photo/gallery/
 author_profile: false
 ---
+<p><a href="/photo/">&larr; go back</a></p>
 
-<p><a href="/photo/">&larr; Back to all galleries</a></p>
-
-<h2 id="photo-gallery-title">Loading gallery...</h2>
 <div id="photo-grid" class="photo-grid" aria-live="polite"></div>
 
 <div id="photo-lightbox" class="photo-lightbox" hidden>
