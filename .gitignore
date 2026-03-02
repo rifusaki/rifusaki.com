@@ -1,7 +1,30 @@
 _site
 .sass-cache
 .jekyll-metadata
+.bundle/
+vendor/bundle/
 
 .DS_Store
 Thumbs.db
 .vscode
+
+# Node.js dependencies and runtime files
+node_modules/
+/npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+.npm
+.eslintcache
+.prettiercache
+.cache
+
+# Build outputs and temporary directories
+/dist
+/build
+.wrangler/
+wrangler-dist/
+.next/
+out/
+.svelte-kit/

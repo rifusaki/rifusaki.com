@@ -31,3 +31,125 @@ html {
 .layout--post .page__content {
   font-size: calc(1em - 1pt);
 }
+
+.photo-galleries {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.photo-gallery-card {
+  border: 1px solid #d8dfd8;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fbfdf9;
+}
+
+.photo-gallery-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.photo-gallery-card__cover {
+  aspect-ratio: 4 / 3;
+  background: #ecf1ea;
+}
+
+.photo-gallery-card__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-gallery-card__placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5d645d;
+}
+
+.photo-gallery-card h3,
+.photo-gallery-card p {
+  margin: 0;
+  padding: 0.6rem 0.8rem;
+}
+
+.photo-gallery-card p {
+  color: #4f5850;
+  padding-top: 0;
+  padding-bottom: 0.9rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.photo-grid__item {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.photo-grid__item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.photo-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 16, 14, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.photo-lightbox[hidden] {
+  display: none;
+}
+
+.photo-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.photo-lightbox__close,
+.photo-lightbox__prev,
+.photo-lightbox__next {
+  position: absolute;
+  border: 1px solid #cad3ca;
+  background: rgba(242, 247, 244, 0.9);
+  color: #223026;
+  border-radius: 999px;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.photo-lightbox__close {
+  top: 1rem;
+  right: 1rem;
+}
+
+.photo-lightbox__prev {
+  left: 1rem;
+}
+
+.photo-lightbox__next {
+  right: 1rem;
+}
