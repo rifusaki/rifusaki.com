@@ -58,7 +58,7 @@ async function loadGalleries() {
       })
       .join("");
   } catch (error) {
-    renderMessage("Could not load galleries right now.");
+    renderMessage("Load failed.");
   }
 }
 

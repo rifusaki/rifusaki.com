@@ -1,28 +1,11 @@
 ---
-title: "```linkedin-markdownificator```"
-excerpt: "Turn your full (private) LinkedIn profile into Markdown."
+title: "linkedin markdownificator"
+excerpt: "full (private) LinkedIn profile into Markdown."
 author_profile: true
-# header:
-#   image: /assets/images/foo-bar-identity.jpg
-#   teaser: /assets/images/foo-bar-identity-th.jpg
 sidebar:
   - title: "Repo"
-    # image: http://placehold.it/350x250
-    # image_alt: "logo"
     text: "[rifusaki/linkedin-markdownificator](https://github.com/rifusaki/linkedin-markdownificator)"
-#   - title: "Responsibilities"
-#     text: "Reuters try PR stupid commenters should isn't a business model"
-# gallery:
-#   - url: /assets/images/unsplash-gallery-image-1.jpg
-#     image_path: assets/images/unsplash-gallery-image-1-th.jpg
-#     alt: "placeholder image 1"
-#   - url: /assets/images/unsplash-gallery-image-2.jpg
-#     image_path: assets/images/unsplash-gallery-image-2-th.jpg
-#     alt: "placeholder image 2"
-#   - url: /assets/images/unsplash-gallery-image-3.jpg
-#     image_path: assets/images/unsplash-gallery-image-3-th.jpg
-#     alt: "placeholder image 3"
-order: 2
+order: 4
 ---
 
 As the name suggests, you can use this tool to export your LinkedIn profile to Markdown. From there you can export it to PDF however you like.
