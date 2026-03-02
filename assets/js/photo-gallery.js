@@ -39,6 +39,7 @@ function renderLightbox(index) {
   lightboxImage.alt = images[index].key;
   lightbox.hidden = false;
   document.body.style.overflow = "hidden";
+  document.body.classList.add("lightbox-open");
 }
 
 function hideLightbox() {
@@ -47,6 +48,7 @@ function hideLightbox() {
   lightboxImage.src = "";
   activeIndex = -1;
   document.body.style.overflow = "";
+  document.body.classList.remove("lightbox-open");
 }
 
 function moveLightbox(step) {

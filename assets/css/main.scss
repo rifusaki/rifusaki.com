@@ -72,12 +72,13 @@ html {
 }
 
 .photo-gallery-card h3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .photo-gallery-card h3,
 .photo-gallery-card p {
   margin: 0;
+  font-size: 0.8rem;
   padding: 0.6rem 0.8rem;
 }
 
@@ -107,6 +108,11 @@ html {
   object-fit: cover;
   border-radius: $border-radius;
   display: block;
+}
+
+/* Drop the masthead behind the lightbox when it is open */
+body.lightbox-open .masthead {
+  z-index: 0 !important;
 }
 
 .photo-lightbox {
