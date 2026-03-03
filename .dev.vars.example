@@ -1,3 +1,9 @@
 # local-only Wrangler dev variables
 # leave empty to fetch from a local localhost:8788/api/raw/... endpoint
 PHOTO_PUBLIC_BASE_URL=https://tukuriva.rifusaki.com
+
+# R2 API credentials — required for `npm run photos:process`
+R2_ACCOUNT_ID=
+R2_ACCESS_KEY_ID=
+R2_SECRET_ACCESS_KEY=
+R2_BUCKET_NAME=tukuriva
