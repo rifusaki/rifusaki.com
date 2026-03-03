@@ -18,6 +18,23 @@ function escapeAttribute(value) {
   return escapeHtml(String(value || ""));
 }
 
+/**
+ * Resolves the cover thumbnail URL for a gallery card.
+ *
+ * Priority:
+ *   1. Manual override in window.GALLERY_COVERS (keyed by slug to R2 path)
+ *   2. Pre-generated 400px WebP thumbnail (gallery.coverThumb)
+ *   3. Original cover image (gallery.cover)
+ */
+function resolveCoverUrl(gallery) {
+  const overrides = window.GALLERY_COVERS || {};
+  const overrideKey = overrides[gallery.slug];
+  if (overrideKey) {
+    return `/api/raw/${overrideKey.split("/").map(encodeURIComponent).join("/")}`;
+  }
+  return gallery.coverThumb || gallery.cover || null;
+}
+
 async function loadGalleries() {
   if (!galleriesContainer) return;
 
@@ -42,8 +59,9 @@ async function loadGalleries() {
         const title = escapeHtml(gallery.title || "Untitled gallery");
         const count = typeof gallery.count === "number" ? `${gallery.count} photos` : "";
         const href = `/photo/gallery/?gallery=${encodeURIComponent(gallery.slug)}`;
-        const cover = gallery.cover
-          ? `<img src="${escapeAttribute(gallery.cover)}" alt="${title}" loading="lazy" decoding="async" />`
+        const coverSrc = resolveCoverUrl(gallery);
+        const cover = coverSrc
+          ? `<img src="${escapeAttribute(coverSrc)}" data-original="${escapeAttribute(gallery.cover || coverSrc)}" alt="${title}" loading="lazy" decoding="async" onerror="if(this.src!==this.dataset.original)this.src=this.dataset.original" />`
           : "<div class=\"photo-gallery-card__placeholder\">No cover</div>";
 
         return `
