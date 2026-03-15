@@ -36,7 +36,7 @@ function renderLightbox(index) {
 
   activeIndex = index;
   const image = images[index];
-  // Use the 1200px WebP medium if available, fall back to original.
+  // Use the WebP medium if available, fall back to original.
   lightboxImage.src = image.mediumUrl || image.url;
   lightboxImage.dataset.original = image.url;
   lightboxImage.onerror = function () {

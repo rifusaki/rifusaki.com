@@ -203,7 +203,7 @@ async function galleryBySlug(env, request, slug) {
         key: obj.key,
         url: publicImageUrl(request, env, obj.key),
         thumbUrl: thumbImageUrl(request, env, obj.key, 400),
-        mediumUrl: thumbImageUrl(request, env, obj.key, 1200),
+        mediumUrl: thumbImageUrl(request, env, obj.key, 2000),
       }));
     images.push(...next);
     cursor = page.truncated ? page.cursor : undefined;

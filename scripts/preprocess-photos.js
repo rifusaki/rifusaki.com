@@ -8,13 +8,10 @@
  * uploads them back under the `_thumbs/` prefix:
  *
  *   _thumbs/400/<gallery>/<filename>.webp   – grid thumbnails & gallery covers
- *   _thumbs/1200/<gallery>/<filename>.webp  – lightbox view
+ *   _thumbs/2000/<gallery>/<filename>.webp  – lightbox view
  *
- * Run with npm run photos:process
- *
+ * Run with npm run photos:process. Images whose 400px thumb already exists are skipped.
  * Requires R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME
- *
- * Images whose 400px thumb already exists are skipped.
  *
  * Flags:
  *   --force   Re-process and overwrite all existing thumbnails.
@@ -34,9 +31,9 @@ dotenv.config({ path: ".dev.vars" });
 
 
 // Config
-const THUMB_WIDTHS = { grid: 400, lightbox: 1200 };
+const THUMB_WIDTHS = { grid: 400, lightbox: 2000 };
 const THUMB_PREFIX = "_thumbs";
-const WEBP_QUALITY = { grid: 80, lightbox: 85 };
+const WEBP_QUALITY = { grid: 80, lightbox: 98 };
 const IMAGE_EXTS = new Set(["jpg", "jpeg", "png", "webp", "avif", "gif"]);
 
 const {
