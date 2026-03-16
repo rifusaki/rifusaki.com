@@ -6,43 +6,42 @@
 #
 # After adding an entry, run `npm run photos:process` to ensure the cover photo has a thumbnail generated.
 
-00-00-old: 00-00 Old/14946471277171.5bbf8947d36bb.webp
-17-12-guajira: 17-12 Guajira/17-12-29 Guajira-1 l.webp
-18-05-madrid-wm: 18-05 Madrid-WM/18-05-27 Madrid-1.webp
-18-05-paris-wm: 18-05 París-WM/18-05-30 Paris-1.webp
-18-05-villa-de-leyva-wm: 18-05 Villa de Leyva-WM/18-05-13 Villa de Leyva-1.webp
-18-06-italia-wm: 18-06 Italia-WM/18-06-03 Italia-1.webp
-18-06-venecia: 18-06 Venecia/18-06-08-Italia-40 l.webp
-18-07-bolivar: 18-07 Bolívar/18-07-04-Bolívar-1 l.webp
-18-09-fotomaraton: 18-09 Fotomaratón/Bogotá Activa l.webp
-18-10-tomine-wm: 18-10 Tominé-WM/18-10-14 Tominé-1.webp
-18-11-santander-wm: 18-11 Santander-WM/18-11-09 Bucaramanga-1.webp
-18-12-bolivia: 18-12 Bolivia/18-12-27 Sudamérica-1.webp
-18-12-boyaca-wm: 18-12 Boyacá-WM/18-12-07 Villa de Leyva-1.webp
-18-12-chile: 18-12 Chile/18-12-29 Sudamérica-39.webp
-18-12-chingaza: 18-12 Chingaza/18-12-16-Chingaza-1 l.webp
-18-12-rocco: 18-12 Rocco/18-12-18-Rocco-1.webp
-19-06-iguaima: 19-06 Iguaima/19-06-23 Iguaima-1 l.webp
-19-07-neusa: 19-07 Neusa/19-07-28 Neusa-1 l.webp
-19-08-tenjo: 19-08 Tenjo/19-08-25 Tenjo-1.webp
-19-09-la-reserva-cota: 19-09 La Reserva Cota/19-09-30 La Reserva Cota-1.webp
-19-12-monserrate: 19-12 Monserrate/19-12-04 Monserrate-1.webp
-20-09-paipa: 20-09 Paipa/20-05-08 Bogotá-1.webp
-21-01-chicaque: 21-01 Chicaque/21-01-31 Chicaque-1.webp
-21-02-matarredonda: 21-02 Matarredonda/21-02-14 Matarredonda-1.webp
-21-02-tolima: 21-02 Tolima/21-02-20 Tolima-1.webp
-21-03-suesca: 21-03 Suesca/21-03-07 Suesca-1.webp
-21-03-sutatausa: 21-03 Sutatausa/21-03-22 Sutatausa-1.webp
-21-04-tolima: 21-04 Tolima/21-04-04 Tolima-1.webp
-21-06-tenza: 21-06 Tenza/20210626_CO-BOY_15.webp
-21-10-san-andres: 21-10 San Andrés/21-10 SA Ret/21-10-03 SA ot-1.webp
-22-01-guainia: 22-01 Guainia/GUA-1.webp
-22-01-vichada: 22-01 Vichada/22-01-02 Vichada-1.webp
-22-11-25n: 22-11 25N/22-11-25 25N-7.webp
-23-08-fitland-inertial: 23-08 Fitland Inertial/FitlandIN-1.webp
-23-12-im703-taurus: 23-12 IM703 Taurus/IM703-1.webp
-24-05-copa-arrayanes: 24-05 Copa Arrayanes/24-05-04 Arrayanes-1.webp
-24-09-5150: 24-09 5150/IM5150-1.webp
-25-10-atope: 25-10 ATope/10-25 ATope-10.webp
-25-12-ctg-70-3: 25-12 CTG 70.3/11-25 CTG703-10.webp
-26-01-tolima: 26-01 Tolima/2601_TOL_-01.webp
+00-00-old: 00-00 Old/2af56071277171.5bbf8947d3015.jpg
+17-12-guajira: 17-12 Guajira/17-12-30 Guajira-12 l.jpg
+18-05-madrid-wm: 18-05 Madrid-WM/18-05-27 Madrid-4.jpg
+18-05-paris-wm: 18-05 París-WM/18-05-31 Paris-19.jpg
+18-05-villa-de-leyva-wm: 18-05 Villa de Leyva-WM/18-05-13 Villa de Leyva-4.jpg
+18-06-italia-wm: 18-06 Italia-WM/18-06-04 Italia-8.jpg
+18-06-venecia: 18-06 Venecia/18-06-08-Italia-45 l.jpg
+18-07-bolivar: 18-07 Bolívar/18-07-05-Bolívar-6 l.jpg
+18-09-fotomaraton: 18-09 Fotomaratón/El Espectador l.jpg
+18-10-tomine-wm: 18-10 Tominé-WM/18-10-14 Tominé-2.jpg
+18-11-santander-wm: 18-11 Santander-WM/18-11-10 Bucaramanga-11.jpg
+18-12-bolivia: 18-12 Bolivia/18-12-27 Sudamérica-5.jpg
+18-12-boyaca-wm: 18-12 Boyacá-WM/18-12-08 Villa de Leyva-11.jpg
+18-12-chile: 18-12 Chile/19-01-02 Sudamérica-61.jpg
+18-12-chingaza: 18-12 Chingaza/18-12-16-Chingaza-5 l.jpg
+18-12-rocco: 18-12 Rocco/18-12-18-Rocco-1.jpg
+19-06-iguaima: 19-06 Iguaima/19-06-23 Iguaima-2 l.jpg
+19-07-neusa: 19-07 Neusa/19-07-28 Neusa-1 l.jpg
+19-08-tenjo: 19-08 Tenjo/19-08-25 Tenjo-4.jpg
+19-09-la-reserva-cota: 19-09 La Reserva Cota/19-09-30 La Reserva Cota-8.jpg
+19-12-monserrate: 19-12 Monserrate/19-12-04 Monserrate-3.jpg
+20-09-paipa: 20-09 Paipa/20-09-05 Paipa-10.jpg
+21-01-chicaque: 21-01 Chicaque/21-01-31 Chicaque-12.jpg
+21-02-matarredonda: 21-02 Matarredonda/21-02-14 Matarredonda-13.jpg
+21-02-tolima: 21-02 Tolima/21-02-20 Tolima-7.jpg
+21-03-suesca: 21-03 Suesca/21-03-07 Suesca-5.jpg
+21-03-sutatausa: 21-03 Sutatausa/21-03-22 Sutatausa-5.jpg
+21-04-tolima: 21-04 Tolima/21-04-04 Tolima-6.jpg
+21-06-tenza: 21-06 Tenza/20210627_CO-BOY_149.jpg
+21-10-san-andres: 21-10 San Andrés/21-10-04 San Andrés-26.jpg
+22-01-guainia: 22-01 Guainia/GUA-91.jpg
+22-01-vichada: 22-01 Vichada/22-01-03 Vichada-45.jpg
+23-08-fitland-inertial: 23-08 Fitland Inertial/FitlandIN-219.jpg
+23-12-im703-taurus: 23-12 IM703 Taurus/IM703-126.jpg
+24-05-copa-arrayanes: 24-05 Copa Arrayanes/24-05-04 Arrayanes-75.jpg
+24-09-5150: 24-09 5150/IM5150-84.jpg
+25-10-atope: 25-10 ATope/10-25 ATope-36.jpg
+25-12-ctg-70-3: 25-12 CTG 70.3/11-25 CTG703-42.jpg
+26-01-tolima: 26-01 Tolima/2601_TOL_-15.jpg
