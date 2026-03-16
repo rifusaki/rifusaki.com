@@ -15,7 +15,7 @@ if command -v rbenv > /dev/null; then
 fi
 
 echo "Starting Jekyll in the background..."
-bundle _2.5.7_ exec jekyll serve --host "${JEKYLL_HOST}" --port "${JEKYLL_PORT}" --livereload &
+bundle exec jekyll serve --host "${JEKYLL_HOST}" --port "${JEKYLL_PORT}" --livereload &
 JEKYLL_PID=$!
 
 function cleanup() {
@@ -30,9 +30,7 @@ sleep 5
 
 # Start wrangler using the static directory output of Jekyll
 # Wrangler will serve the static files from _site and also execute functions from functions/
-# --remote connects to the real Cloudflare R2 bucket (replaces the removed wrangler.toml
-# r2_buckets[].remote field, which is unsupported by the Pages build pipeline).
+# The R2 binding uses remote = true in wrangler.toml to connect to the real bucket.
 echo "Starting Wrangler dev server..."
 exec npx wrangler pages dev _site \
-  --port="${CF_PAGES_PORT}" \
-  --remote
+  --port="${CF_PAGES_PORT}"

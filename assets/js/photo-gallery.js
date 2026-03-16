@@ -35,8 +35,14 @@ function renderLightbox(index) {
   }
 
   activeIndex = index;
-  lightboxImage.src = images[index].url;
-  lightboxImage.alt = images[index].key;
+  const image = images[index];
+  // Use the WebP medium if available, fall back to original.
+  lightboxImage.src = image.mediumUrl || image.url;
+  lightboxImage.dataset.original = image.url;
+  lightboxImage.onerror = function () {
+    if (this.src !== this.dataset.original) this.src = this.dataset.original;
+  };
+  lightboxImage.alt = image.key;
   lightbox.hidden = false;
   document.body.style.overflow = "hidden";
   document.body.classList.add("lightbox-open");
@@ -98,7 +104,14 @@ function renderGrid() {
     .map(
       (image, index) => `
       <button class="photo-grid__item" data-index="${index}" type="button" aria-label="Open image ${index + 1}">
-        <img src="${escapeHtml(image.url)}" alt="${escapeHtml(image.key)}" loading="lazy" decoding="async" />
+        <img
+          src="${escapeHtml(image.thumbUrl || image.url)}"
+          data-original="${escapeHtml(image.url)}"
+          alt="${escapeHtml(image.key)}"
+          loading="lazy"
+          decoding="async"
+          onerror="if(this.src!==this.dataset.original)this.src=this.dataset.original"
+        />
       </button>
     `
     )

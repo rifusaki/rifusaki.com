@@ -41,6 +41,19 @@ function publicImageUrl(request, env, key) {
   return `${origin}/api/raw/${encodedKey}`;
 }
 
+/**
+ * Returns the public URL for a pre-generated WebP thumbnail stored under
+ * the `_thumbs/<width>/` prefix in the same R2 bucket.
+ *
+ * `Gallery/photo.jpg` becomes `_thumbs/400/Gallery/photo.webp`
+ */
+function thumbImageUrl(request, env, key, width) {
+  const lastDot = key.lastIndexOf(".");
+  const stem = lastDot !== -1 ? key.slice(0, lastDot) : key;
+  const thumbKey = `_thumbs/${width}/${stem}.webp`;
+  return publicImageUrl(request, env, thumbKey);
+}
+
 function isImageKey(key) {
   const ext = key.split(".").pop();
   return ext ? IMAGE_EXTENSIONS.has(ext.toLowerCase()) : false;
@@ -64,7 +77,8 @@ function listGalleryEntries(prefixes) {
   const usedSlugs = new Set();
 
   for (const prefix of prefixes) {
-    if (!prefix || prefix.startsWith(".")) {
+    // Skip hidden/system folders (dot-prefixed and underscore-prefixed, e.g. _thumbs/)
+    if (!prefix || prefix.startsWith(".") || prefix.startsWith("_")) {
       continue;
     }
 
@@ -85,13 +99,24 @@ function listGalleryEntries(prefixes) {
   return entries;
 }
 
-async function countImagesAndCover(bucket, prefix) {
+function withTimeout(promise, ms, label) {
+  const timeout = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error(`Timeout after ${ms}ms: ${label}`)), ms)
+  );
+  return Promise.race([promise, timeout]);
+}
+
+async function countImagesAndCover(bucket, prefix, request, env, timeoutMs = 10000) {
   let cursor;
   let count = 0;
   let cover = null;
 
   do {
-    const page = await bucket.list({ prefix, cursor, limit: 1000 });
+    const page = await withTimeout(
+      bucket.list({ prefix, cursor, limit: 1000 }),
+      timeoutMs,
+      `bucket.list(${prefix})`
+    );
     const imageObjects = (page.objects || []).filter((obj) => isImageKey(obj.key));
 
     if (!cover && imageObjects.length > 0) {
@@ -102,7 +127,11 @@ async function countImagesAndCover(bucket, prefix) {
     cursor = page.truncated ? page.cursor : undefined;
   } while (cursor);
 
-  return { count, cover };
+  return {
+    count,
+    cover: cover ? publicImageUrl(request, env, cover) : null,
+    coverThumb: cover ? thumbImageUrl(request, env, cover, 400) : null,
+  };
 }
 
 function getBucket(env) {
@@ -119,14 +148,28 @@ async function listTopLevelGalleries(env, request) {
 
   const galleries = await Promise.all(
     entries.map(async (gallery) => {
-      const { count, cover } = await countImagesAndCover(bucket, gallery.prefix);
+      let count = 0;
+      let cover = null;
+      let coverThumb = null;
+
+      try {
+        ({ count, cover, coverThumb } = await countImagesAndCover(
+          bucket,
+          gallery.prefix,
+          request,
+          env
+        ));
+      } catch (err) {
+        console.error(`[gallery] Failed to count images for "${gallery.prefix}": ${err.message}`);
+      }
 
       return {
         slug: gallery.slug,
         title: gallery.title,
         prefix: gallery.prefix,
         count,
-        cover: cover ? publicImageUrl(request, env, cover) : null,
+        cover,
+        coverThumb,
       };
     })
   );
@@ -149,12 +192,18 @@ async function galleryBySlug(env, request, slug) {
   let cursor;
 
   do {
-    const page = await bucket.list({ prefix: matchedPrefix, cursor, limit: 1000 });
+    const page = await withTimeout(
+      bucket.list({ prefix: matchedPrefix, cursor, limit: 1000 }),
+      10000,
+      `bucket.list(${matchedPrefix})`
+    );
     const next = (page.objects || [])
       .filter((obj) => isImageKey(obj.key))
       .map((obj) => ({
         key: obj.key,
         url: publicImageUrl(request, env, obj.key),
+        thumbUrl: thumbImageUrl(request, env, obj.key, 400),
+        mediumUrl: thumbImageUrl(request, env, obj.key, 2000),
       }));
     images.push(...next);
     cursor = page.truncated ? page.cursor : undefined;
@@ -170,4 +219,4 @@ async function galleryBySlug(env, request, slug) {
   };
 }
 
-export { galleryBySlug, getBucket, listTopLevelGalleries, publicImageUrl };
+export { galleryBySlug, getBucket, listTopLevelGalleries, publicImageUrl, thumbImageUrl };

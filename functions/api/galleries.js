@@ -8,6 +8,7 @@ export async function onRequestGet(context) {
       title: gallery.title,
       count: gallery.count,
       cover: gallery.cover,
+      coverThumb: gallery.coverThumb,
     }));
 
     return new Response(JSON.stringify({ galleries: payload }), {
