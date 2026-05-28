@@ -7,7 +7,7 @@ author_profile: true
 
 > [Read in english](/CV-en)
 
-Estudiante de física en la Universidad Nacional de Colombia e iangeniera de datos en Intwo. Con experiencia en análisis de datos, visualización y desarrollo de pipelines de datos. Competente en Python (pandas, numpy, scipy, matplotlib) y R (ggplot2) para procesamiento y análisis de datoas. Actualmente desarrollando habilidades en aprendizaje automático con PyTorch y sistemas de información geográfica. Experiencia en trabajo colaborativo, investigación, traducción técnica, y transversalización de los temas de género y sexualidad en el ámbito universitario.
+Estudiante de física en la Universidad Nacional de Colombia e ingeniera de datos en Intwo. Con experiencia en análisis de datos, visualización y desarrollo de pipelines de datos. Competente en Python (pandas, numpy, scipy, matplotlib) y R (ggplot2) para procesamiento y análisis de datos. Actualmente desarrollando habilidades en aprendizaje automático con PyTorch y sistemas de información geográfica. Experiencia en trabajo colaborativo, investigación, traducción técnica, y transversalización de los temas de género y sexualidad en el ámbito universitario.
 
 *Análisis de datos • Python • R • SQL • Machine Learning • Visualización de datos*
 
@@ -29,6 +29,8 @@ Estudiante de física en la Universidad Nacional de Colombia e iangeniera de dat
 <h3>Ingeniera de datos — Intwo</h3>
 <p align="right"><i>nov. 2025 - actualidad</i></p>
 
+Utilizando como base Microsoft Azure, me dedico a la creación y mantenimiento de pipelines ETL (Function Apps, Data Factory), análisis de datos masivos, creación de modelos (Python/R) y presentación a clientes finales (Power BI o Grafana).
+<small>Análisis de datos • Modelado de datos • Microsoft Azure • Microsoft SQL Server</small>
 
 <h3>Agente del servicio de atención al cliente — Concentrix</h3>
 <p align="right"><i>oct. 2024 - mar. 2025 · 6 meses</i></p>
