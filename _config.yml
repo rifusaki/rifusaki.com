@@ -61,7 +61,7 @@ plugins:
 
 author:
   name   : "Martina"
-  avatar : "/assets/images/martina2.jpeg"
+  avatar : "/assets/images/martina2.png"
   bio    : "physics student, data analyst, photographer, athlete, sometimes artist"
   links:
     - label: "Mail"
