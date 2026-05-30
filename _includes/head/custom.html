@@ -25,4 +25,19 @@
 <meta name="twitter:description" content="'s corner of the internet">
 <meta name="twitter:image" content="https://rifusaki.com/assets/images/home-header.jpg">
 
+<!-- Phone injection for private CV pages -->
+{% if page.author == 'private' and site.data.private_config.phone %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var mailLink = document.querySelector('.author__urls a[href^="mailto"]');
+  if (mailLink) {
+    var phoneNumber = '{{ site.data.private_config.phone }}';
+    var phoneHref = 'tel:' + phoneNumber.replace(/[\s-]/g, '');
+    var phoneHtml = '<a href="' + phoneHref + '"><i class="fas fa-fw fa-phone" aria-hidden="true"></i> ' + phoneNumber + '</a>';
+    mailLink.insertAdjacentHTML('beforebegin', phoneHtml);
+  }
+});
+</script>
+{% endif %}
+
 <!-- end custom head snippets -->

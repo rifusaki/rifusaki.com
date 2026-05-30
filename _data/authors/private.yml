@@ -1,0 +1,13 @@
+name: "Martina"
+avatar: "/assets/images/private/martina.png"
+bio: "physics student, data engineer, duathlete, ultrarunner, photographer, sometimes artist"
+links:
+  - label: "martina@rifusaki.com"
+    icon: "fas fa-fw fa-envelope"
+    url: "mailto:martina@rifusaki.com"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/rifusaki"
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin-in"
+    url: "https://www.linkedin.com/in/rifusaki/"

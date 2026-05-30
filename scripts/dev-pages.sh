@@ -1,5 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 set -euo pipefail
+
+# Ensure rbenv Ruby takes precedence over system Ruby
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+eval "$(rbenv init -)"
 
 # Cloudflare/Wrangler settings
 : "${CF_PAGES_PORT:=8788}"
@@ -7,12 +11,6 @@ set -euo pipefail
 # Jekyll upstream server used by `wrangler pages dev` proxy mode.
 : "${JEKYLL_HOST:=127.0.0.1}"
 : "${JEKYLL_PORT:=4000}"
-
-# We must ensure we use the correct ruby environment and start Jekyll in the background
-# The ruby errors show it is defaulting to homebrew ruby 3.4.0 instead of rbenv ruby 3.1.6
-if command -v rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
 
 echo "Starting Jekyll in the background..."
 bundle exec jekyll serve --host "${JEKYLL_HOST}" --port "${JEKYLL_PORT}" --livereload &

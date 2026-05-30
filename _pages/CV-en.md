@@ -7,142 +7,152 @@ author_profile: true
 
 > [Leer en español](/CV)
 
-Physics student at Universidad Nacional de Colombia and Data Engineer at Intwo with experience in data analysis, visualization, and data pipeline development. Proficient in Python (pandas, numpy, scipy, matplotlib) and R (ggplot2) for data processing and analysis. Currently developing skills in machine learning with PyTorch and geographic information systems. Experience in collaborative work, research, technical translation, and mainstreaming gender and sexuality topics in the university environment.
+Physics student at Universidad Nacional de Colombia with professional experience in data-oriented software development and data engineering on Microsoft Azure. I have designed and maintained applications and pipelines in Python, Node.js, and cloud services, participating in process automation, large-scale data analysis, and the construction of technological solutions for enterprise clients.
 
-*Data Analysis • Python • R • SQL • Machine Learning • Data Visualization*
+I possess solid foundations in programming, mathematical modeling, and solving complex problems. I am interested in developing my career in data analysis and backend software engineering, contributing to the design, maintenance, and scaling of robust, high-impact systems.
 
+Currently developing skills in machine learning with PyTorch. Outside of work, I train for duathlon and practice photography.
 
 ## Technical Skills
 
-**Languages and tools:** Python • R • SQL • C++ • LaTeX • JavaScript • Go (basic)
+### Stack
 
-**Data analysis:** pandas • numpy • scipy • matplotlib • ggplot2 • Statistical analysis • Data visualization
+**Languages:** Python • R • SQL • TypeScript/JavaScript • LaTeX • Go (basic)
+{: style="margin-bottom: 0.5em;"}
 
-**Machine Learning:** PyTorch • scikit-learn • Computer vision
+**Data and ML:** pandas • numpy • scipy • matplotlib • ggplot2 • PyTorch • scikit-learn • Power BI • Grafana
+{: style="margin-bottom: 0.5em;"}
 
-**Development:** Flask • Node.js • Express.js • React.js • Git • Web scraping
+**Cloud and infrastructure:** Azure Function Apps • Azure Data Factory • Microsoft SQL Server • Google Cloud Storage • Cloudflare
+{: style="margin-bottom: 0.5em;"}
 
-**Other:** Geographic Information Systems (ArcGIS, QGIS) • Microsoft Office • Cloud Computing
+**Development:** Express.js • Node.js • React • Flask • Git • Conda • Pixi
+{: style="margin-bottom: 0.5em;"}
 
+**Geospatial:** QGIS • Spatial analysis
+{: style="margin-bottom: 0.5em;"}
+
+### Capabilities
+
+**Data engineering:** ETL pipeline design and implementation • source integration • workflow automation
+{: style="margin-bottom: 0.5em;"}
+
+**Analysis and modeling:** Statistical modeling • time series • autoregressive models • visualization
+{: style="margin-bottom: 0.5em;"}
+
+**Machine learning:** Classification • feature extraction • computer vision • model training and evaluation
+{: style="margin-bottom: 0.5em;"}
+
+**Scientific computing:** Numerical methods • simulation • physical systems modeling
+{: style="margin-bottom: 0.5em;"}
+
+**Technical communication:** Writing • translation • documentation
+{: style="margin-bottom: 0.5em;"}
 
 ## Experience
 
 <h3>Data Engineer — Intwo</h3>
-<p align="right"><i>Nov. 2025 - Present</i></p>
+{: style="margin-bottom: 0.5em;"}
+<p align="right"><i>Nov. 2025 - present</i></p>
 
-Using Microsoft Azure as a foundation, I am dedicated to creating and maintaining ETL pipelines (Function Apps, Data Factory), massive data analysis, model creation (Python/R), and presentation to end clients (Power BI or Grafana).\
-<small>Data analysis • Data modeling • Microsoft Azure • Microsoft SQL Server</small>
+Design, development, and implementation of Microsoft Azure-based technological solutions for private sector organizations and institutions, focused on the integration, processing, and analysis of large data volumes. I participate in the construction and maintenance of applications and data pipelines using Azure Function Apps, Azure Data Factory, Python, R, and SQL, ensuring process automation, data quality, and data availability for decision-making.
 
-<h3>Customer Service Agent — Concentrix</h3>
+Key achievements include:
+
+- Development of a prediction algorithm for virtual machine resource usage using autoregressive models and PID controllers, used to optimize computational resource allocation across different families and regions.
+- Design and implementation of monitoring and observability dashboards in Power BI and Grafana for telemetry and cost tracking.
+- Automation of data integration and transformation workflows, improving operational efficiency and information availability for end users.
+
+<h3>Customer service agent — Concentrix</h3>
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Oct. 2024 - Mar. 2025 · 6 months</i></p>
 
-Customer support in high-volume environment, managing information systems and tracking performance metrics.\
-<small>Customer service • Information management • Working under pressure</small>
+Customer service in a high-volume environment, handling information management systems and tracking performance metrics.
 
-
-<h3>Management Team Member - REDai UNAL</h3>
+<h3>Steering committee member - REDai UNAL</h3>
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Oct. 2022 - Feb. 2023 · 5 months</i></p>
 
-I was part of the UNGen project at the Student Network for Comprehensive Support at Universidad Nacional de Colombia. Our team specializes in research, promotion, support, and dissemination of topics concerning gender equality and sexual and gender diversity. Conducted survey data analysis to identify patterns of gender-based violence on campus, generating insights that guided communication and prevention strategies on social media.\
-<small>Data analysis • Writing • Graphic design • Report writing • Digital photography • Proposal development</small>
+I was part of the UNGen project of the Red Estudiantil de Acompañamiento Integral (Comprehensive Student Support Network) at Universidad Nacional de Colombia. I was dedicated to research, promotion, support, and dissemination of topics related to gender equality and gender and sexual diversities.
 
+- Performed data analysis on approximately 1,000 surveys to identify patterns of gender-based violence on campus, generating insights that guided communication and prevention strategies.
 
-<h3>Freelance Writer - Livingston Research</h3>
+<h3>Freelance writer — Livingston Research</h3>
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Mar. 2020 - Jun. 2021 · 1 year 4 months</i></p>
 
-Writing and translation of academic and technical texts across various knowledge areas on demand.\
-<small>Translation • Writing • Microsoft Office • Academic writing • Editing • Problem solving</small>
-
+Writing and translation of academic and technical texts across various fields of knowledge on demand, in both English and Spanish.
 
 ## Education
 
 <h3>BS, Physics - Universidad Nacional de Colombia</h3>
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Jul. 2020 - Dec. 2026</i></p>
 
-Undergraduate degree in Physics. Focus on computational physics, data analysis and modeling. Experience in experimental data processing, numerical simulations, and results visualization.\
-<small>Computing • Data modeling • Data science • Data analysis • Information technology • C++ • Data visualization • Python • R • Microsoft Office • Writing • Academic writing • LaTeX • Physical systems modeling • Translation • Computational physics</small>
-
+Undergraduate degree in Physics. Emphasis on computational physics, data analysis and modeling. Experience in experimental data processing, numerical simulations, physical systems modeling, and results visualization.
 
 ## Projects
 
 ### [catnip](/portfolio/catnip/)
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>in development</i></p>
 
-Machine learning system for manga character face identification using PyTorch. Includes image processing, feature extraction, and training of computer vision models.\
-<small>PyTorch • Python • Machine Learning • Computer vision • Deep Learning</small>
-
+Machine learning system for identifying manga character faces—focused on one specific character—using PyTorch. Includes image processing, feature extraction, and computer vision model training.
 
 ### [linkedin-markdownificator](/portfolio/linkedin-markdownificator/)
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Oct. 2023 - present</i></p>
 
-Python tool to export LinkedIn profile data to Markdown format through web scraping, facilitating portability and versioning of professional information.\
-<small>Web scraping • Python • Automation</small>
+Python tool to export LinkedIn profile data to Markdown format via web scraping.
 
-
-### [Implementation of a Discretization of the Diffusion Equation Using Finite Differences](/portfolio/ecuacion-de-difusion/)
+### [Implementation of a discretization of the diffusion equation using finite differences](/portfolio/ecuacion-de-difusion/)
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Apr. 2023 - Jun. 2023</i></p>
 
-Development of a numerical method to solve the diffusion equation using finite differences. Implemented space-time discretization and solved the resulting system of linear equations, validating the method's effectiveness for simulating diffusion and heat transfer processes. Co-authored with Manuel Angel García.\
-<small>LaTeX • Physical systems modeling • Academic writing • Python • Numerical methods</small>
+Development of a numerical method to solve the diffusion equation using finite differences. Space-time discretization was implemented and the resulting system of linear equations was solved, validating the method's effectiveness for simulating diffusion processes and heat transfer. Co-authorship with Manuel Angel García.
 
-
-### [Economy and Atrocity: War in Colombia and Rwanda](/blog/economia-y-atrocidad/)
+### [The economy and atrocity: war in Colombia and Rwanda](/blog/economia-y-atrocidad/)
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>Jul. 2021 - Oct. 2021</i></p>
 
-Comparative analysis of economic causes, consequences, and post-conflict reconstruction processes in Colombia and Rwanda through historical-economic study. Processing and analysis of historical data to identify patterns and extract lessons for post-conflict contexts.\
-<small>Research • Presentations • Data analysis • Academic writing • Translation • Writing</small>
-
+Comparative analysis of economic causes, consequences, and post-conflict reconstruction processes in Colombia and Rwanda through historical-economic study. Processing and analysis of historical data to identify patterns and extract lessons for post-conflict contexts.
 
 ## Certificates
 
-### Developing AI Applications with Python and Flask
-<p> <span style="float:left;"><b>IBM</b></span> <span style="float:right;"><i>May 2024</i></span> </p>
-<small>Flask • Python • Web development</small>
+**Developing AI Applications with Python and Flask**
+<br><span style="float:left;">IBM</span><span style="float:right;"><i>May 2024</i></span>
+<div style="clear:both; margin-bottom: 8px;"></div>
 
-### Developing Back-End Apps with Node.js and Express
-<p> <span style="float:left;"><b>IBM</b></span> <span style="float:right;"><i>May 2024</i></span> </p>
-<small>Node.js • Express.js • JavaScript</small>
+**Developing Back-End Apps with Node.js and Express**
+<br><span style="float:left;">IBM</span><span style="float:right;"><i>May 2024</i></span>
+<div style="clear:both; margin-bottom: 8px;"></div>
 
-### Developing Front-End Apps with React
-<p> <span style="float:left;"><b>IBM</b></span> <span style="float:right;"><i>May 2024</i></span> </p>
-<small>React.js • JavaScript • TypeScript • Front end development</small>
+**Developing Front-End Apps with React**
+<br><span style="float:left;">IBM</span><span style="float:right;"><i>May 2024</i></span>
+<div style="clear:both; margin-bottom: 8px;"></div>
 
-### Data Fundamentals
-<p> <span style="float:left;"><b>SENATEC</b></span> <span style="float:right;"><i>Apr. 2024</i></span> </p>
-<small>SQL • Data analysis</small>
+**GIS Data Acquisition and Map Design**
+<br><span style="float:left;">University of Toronto</span><span style="float:right;"><i>Apr. 2024</i></span>
+<div style="clear:both; margin-bottom: 8px;"></div>
 
-### GIS Data Acquisition and Map Design
-<p> <span style="float:left;"><b>University of Toronto</b></span> <span style="float:right;"><i>Apr. 2024</i></span> </p>
-<small>Geographic Information Systems • ArcGIS • QGIS</small>
+**Introduction to Cloud Computing**
+<br><span style="float:left;">IBM</span><span style="float:right;"><i>Apr. 2024</i></span>
+<div style="clear:both; margin-bottom: 8px;"></div>
 
-### Introduction to Cloud Computing
-<p> <span style="float:left;"><b>IBM</b></span> <span style="float:right;"><i>Apr. 2024</i></span> </p>
-<small>Cloud computing</small>
-
-### Specialization Program | Python for Everybody
-<p> <span style="float:left;"><b>University of Michigan</b></span> <span style="float:right;"><i>Sep. 2021</i></span> </p>
-<small>SQL • Data visualization • Databases • Computing • Microsoft Office • Web scraping • Data analysis • Python • Information technology • Data modeling</small>
-
+**Specialization | Python for Everybody**
+<br><span style="float:left;">University of Michigan</span><span style="float:right;"><i>Sept. 2021</i></span>
+<div style="clear:both;"></div>
 
 ## Volunteering
 
 <h3>Translator - UNDP Sustainable Energy Hub</h3>
+{: style="margin-bottom: 0.5em;"}
 <p align="right"><i>May 2024 - present</i></p>
 
-Translation of technical content related to the environment and the transition to clean energy sources from English to Spanish.\
-
-
-## Courses
-
-### National Seminar: Juntas, Juntes y Juntos – Approaches from Feminist and Gender Studies
-<p align="right"><small>Associated with Universidad Nacional de Colombia</small></p>
-
-### General Economic History
-<p align="right"><small>Associated with Universidad Nacional de Colombia</small></p>
-
+Translation of technical content related to the environment and transition to clean energy sources from English to Spanish.
 
 ## Languages
 
-- **Spanish:** Native or bilingual proficiency
+- **Spanish:** Bilingual or native proficiency
 - **English:** Full professional proficiency
 - **French:** Basic proficiency

@@ -33,3 +33,9 @@ out/
 .svelte-kit/
 
 docs/
+
+# Private content - not committed to repo
+_config_private.yml
+_data/private_config.yml
+_pages/private/
+assets/images/private/
